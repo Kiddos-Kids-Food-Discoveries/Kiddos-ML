@@ -38,7 +38,7 @@ Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi dis
    3. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
 
 # Arsitektur Model :
-Model menggunakan # CNN #  untuk klasifikasi gambar dengan 4 lapisan konvolusi (Conv2D) untuk mengekstraksi fitur, diikuti dengan batch normalization dan max pooling untuk mereduksi dimensi. #GlobalAveragePooling2D# digunakan untuk mereduksi dimensi lebih lanjut sebelum memasuki lapisan Dense untuk klasifikasi akhir. Dropout diterapkan untuk mencegah overfitting.
+Model menggunakan **CNN**  untuk klasifikasi gambar dengan 4 lapisan konvolusi (Conv2D) untuk mengekstraksi fitur, diikuti dengan batch normalization dan max pooling untuk mereduksi dimensi. **GlobalAveragePooling2D** digunakan untuk mereduksi dimensi lebih lanjut sebelum memasuki lapisan Dense untuk klasifikasi akhir. Dropout diterapkan untuk mencegah overfitting.
 
 ## Kompilasi Model :
 - Model dikompilasi dengan optimizer Adam
