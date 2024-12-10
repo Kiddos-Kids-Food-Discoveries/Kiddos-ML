@@ -25,9 +25,9 @@
 Proyek ini juga disertai dengan versi lengkap dengan format ".ipynb" yang bisa digunakan untuk eksplorasi lebih mendalam terkait model, pelatihan, dan evaluasi. Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi disertakan dalam file `notebook.ipynb`.
 
 **Catatan:** Proses pelatihan model yang menggunakan hingga 50 epoch dan visualisasi menggunakan `plt.show()` bisa memakan waktu cukup lama, terutama pada dataset besar. Oleh karena itu dibagi menjadi beberapa file/script dalam bentuk ".py" yaitu : 
-  - 1. prep_train_model.py (untuk preprocessing data, build model dan train model)
-  - 2. predict_model.py (untuk test model terbaik yang dihasilkan)
-  - 3. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
+   1. prep_train_model.py (untuk preprocessing data, build model dan train model)
+   2. predict_model.py (untuk test model terbaik yang dihasilkan)
+   3. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
 
 # Fitur :
 - Model CNN untuk klasifikasi gambar
