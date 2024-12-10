@@ -32,7 +32,8 @@ Proyek ini bertujuan untuk membangun dan melatih model klasifikasi gambar menggu
 Proyek ini juga disertai dengan versi lengkap dengan format ".ipynb" yang bisa digunakan untuk eksplorasi dari awal sampai menghasilkan output file model.h5 dengan lebih mendalam terkait model, pelatihan, dan evaluasi. 
 Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi disertakan dalam file `notebook.ipynb`.
 
-**Catatan:** Proses pelatihan model yang menggunakan hingga 50 epoch dan visualisasi menggunakan `plt.show()` bisa memakan waktu cukup lama, terutama pada dataset besar. Oleh karena itu dibagi menjadi beberapa file/script dalam bentuk ".py" yaitu : 
+# Script .py
+**Catatan:** Proses pelatihan model pada file `notebook.ipynb` yang menggunakan hingga 50 epoch dan visualisasi menggunakan `plt.show()` bisa memakan waktu cukup lama, terutama pada dataset besar. Oleh karena itu dibagi menjadi beberapa file/script dalam bentuk ".py" yaitu : 
    1. prep_train_model.py (untuk preprocessing data, build model dan train model)
    2. predict_model.py (untuk test model terbaik yang dihasilkan sebelum save model dalam format h5)
    3. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
