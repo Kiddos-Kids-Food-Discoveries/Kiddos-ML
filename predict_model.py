@@ -53,7 +53,7 @@ test_data = val_test_datagen.flow_from_directory(
 )
 
 
-# Load the best model saved during training
+# Load best model dan simpan selama training
 model = load_model("best_model.keras")
 print("Model berhasil dimuat!")
 
