@@ -41,14 +41,20 @@ Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi dis
 Model menggunakan **CNN**  untuk klasifikasi gambar dengan 4 lapisan konvolusi (Conv2D) untuk mengekstraksi fitur, diikuti dengan batch normalization dan max pooling untuk mereduksi dimensi. **GlobalAveragePooling2D** digunakan untuk mereduksi dimensi lebih lanjut sebelum memasuki lapisan Dense untuk klasifikasi akhir. Dropout diterapkan untuk mencegah overfitting.
 
 ## Kompilasi Model :
-- Model dikompilasi dengan optimizer Adam
+Model dikompilasi dengan optimizer Adam
 
+# Evaluasi Model
+Mengukur performa model dengan menggunakan metrik berikut:
+1. Confusion Matrix
+Confusion matrix memberikan gambaran tentang seberapa baik model dalam mengklasifikasikan gambar ke dalam kelas yang benar. Berikut adalah confusion matrix yang dihasilkan setelah model diuji pada dataset pengujian:
+   <img width="869" alt="5_confusion_matrix" src="https://github.com/user-attachments/assets/51fca590-b652-4aab-baaf-ac8a24ab3c7a">
+2. Grafik Training Loss - Validation Loss dan Grafik Training Accuracy - Validation Accuracy
+   Grafik ini menunjukkan perkembangan training loss dan validation loss selama proses pelatihan. Tujuannya adalah untuk melihat apakah model mengalami overfitting atau underfitting. Dan grafik kedua menunjukan perkembangan training accuracy dan validation accuracy. Perbandingan antara keduanya memberikan gambaran seberapa baik model generalisasi pada data yang belum pernah dilihat sebelumnya.
+   <img width="844" alt="6_lost_and_accuracy" src="https://github.com/user-attachments/assets/c4fff4dc-c85e-42d6-943a-6985fa84d77d">
 
+   
 ## Penyimpanan model terbaik :
-    - secara otomatis selama pelatihan (saved as `best_model.keras`)
-## Konversi model ke format `.h5`
-    - untuk digunakan di lingkungan produksi atau pengujian
-    - kode tersimpan pada file "save_model_h5.py" di mana dapat dijalankan setelah file "prep_train_model.py" selesai dijalankan dan file   "best_model.keras" berhasil tersimpan secara otomatis setelah pelatihan selesai dengan menemukan model terbaik.
+Model terbaik disimpan otomatis selama pelatihan sebagai best_model.keras. File model ini kemudian bisa dikonversi ke format .h5 untuk digunakan di lingkungan produksi atau pengujian dengan menjalankan save_model_h5.py.
 
 # File Requirements: 
 File requirements untuk menjalankan proyek ini dapat ditemukan di file dengan nama "requirements.txt". Anda bisa menginstall semua dependensi yang diperlukan dengan menjalankan perintah berikut: 'pip install -r requirements.txt'
