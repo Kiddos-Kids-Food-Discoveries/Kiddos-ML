@@ -58,13 +58,16 @@ File requirements untuk menjalankan proyek ini dapat ditemukan di file dengan na
 ##### Pastikan sudah menginstal Git di komputer. Jika belum, instal Git terlebih dahulu.
 ## 1. Clone Repository
 Buka Terminal di VSCode, dan jalankan perintah berikut untuk meng-clone repository:
+
             - git clone https://github.com/Kiddos-Kids-Food-Discoveries/kiddos-ml.git
 
 ## 2. Masuk ke Folder Project
 Setelah proses cloning selesai, masuk ke folder project dengan perintah:
+
             - cd kiddos-ml
 ## 3. Periksa Isi Folder
 Untuk memastikan isi folder dan file yang ada, jalankan perintah:
+
             - ls
 ## 4. Membuat dan Mengaktifkan Virtual Environment (Opsional, tapi disarankan):
 Untuk menginstal semua dependensi yang dibutuhkan oleh proyek ini, bisa menggunakan pip dengan mengikuti langkah berikut:
