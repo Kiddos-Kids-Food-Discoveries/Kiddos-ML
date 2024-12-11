@@ -1,24 +1,8 @@
 # Machine Learning Project : Klasifikasi Gambar Makanan dengan 19 Kelas
 
 ## Struktur Project : 
-kiddos-ml/
-│
-├── dataset/                     # Folder utama dataset
-│   ├── test/                    # Folder berisi gambar untuk pengujian
-│   ├── train/                   # Folder berisi gambar untuk pelatihan
-│   ├── validation/              # Folder berisi gambar untuk validasi
-│
-├── test_images/                 # Folder berisi 25 gambar untuk pengujian model
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-│
-├── best_model.keras             # Model terbaik yang disimpan selama pelatihan
-├── labels.csv                   # File CSV yang berisi label untuk setiap kelas makanan
-├── model.h5                     # Model akhir yang telah disimpan dalam format HDF5
-├── notebook.ipynb               # Notebook Jupyter yang berisi kode untuk pelatihan, evaluasi, dan visualisasi model
-├── predict.py                   # Script untuk memprediksi gambar menggunakan model yang telah dilatih
-├── requirements.txt             # File yang berisi daftar dependensi yang dibutuhkan oleh proyek ini
+
+<img width="987" alt="Screenshot 2024-12-11 at 15 13 25" src="https://github.com/user-attachments/assets/2ec98a05-2d1f-408e-a95b-0641ab7935e7">
 
 
 ## Deskripsi :
