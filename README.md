@@ -1,11 +1,11 @@
 # Machine Learning Project : Klasifikasi Gambar Makanan dengan 19 Kelas
 
-# Deskripsi :
+## Deskripsi :
 Proyek ini bertujuan untuk membangun dan melatih model klasifikasi gambar menggunakan **Convolutional Neural Networks (CNN)**. Model ini mengklasifikasikan gambar ke dalam 19 kelas makanan yang berbeda.
 #### 19 Kelas:
 `apple`, `avocado`, `banana`, `broccoli`, `carrot`, `chicken`, `corn`, `dragon fruit`, `egg`, `grape`, `green vegetables`, `orange`, `porridge`,     `potato`, `rice`, `tempeh`, `tofu`, `tomato`, `watermelon`
 
-- <img width="612" alt="1_prep_index" src="https://github.com/user-attachments/assets/9fbb51ca-f3cd-494d-b4c0-aa52a7e72bf5">
+- <img width="333" alt="Screenshot 2024-12-11 at 15 01 50" src="https://github.com/user-attachments/assets/2f9c648a-798d-400d-ab38-1caf22c148b0">
 
 # Tools yang Digunakan:
 ### TensorFlow, Keras untuk membangun dan melatih model CNN.
