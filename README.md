@@ -57,6 +57,9 @@ Confusion matrix memberikan gambaran tentang seberapa baik model dalam mengklasi
 Model terbaik disimpan otomatis selama pelatihan sebagai best_model.keras. File model ini kemudian bisa dikonversi ke format .h5 untuk digunakan di lingkungan produksi atau pengujian dengan menjalankan save_model_h5.py.
 
 # File Requirements: 
-File requirements untuk menjalankan proyek ini dapat ditemukan di file dengan nama "requirements.txt". Bisa menginstall semua dependensi yang diperlukan dengan menjalankan perintah berikut: 'pip install -r requirements.txt' pada terminal. 
+File requirements untuk menjalankan proyek ini dapat ditemukan di file dengan nama "requirements.txt". Bisa menginstall semua dependensi yang diperlukan dengan menjalankan perintah berikut pada terminal.
+```
+pip install -r requirements.txt
+```
 
 
