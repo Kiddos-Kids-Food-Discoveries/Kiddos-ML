@@ -19,7 +19,7 @@ Proyek ini bertujuan untuk membangun dan melatih model klasifikasi gambar menggu
     * Validation: 1,900 gambar
     * Test: 1,900 gambar
 
-#### 1. Augmentasi Gambar
+##### Augmentasi Gambar
          - Gambar yang telah diproses melalui augmentasi untuk memperbesar variasi data pelatihan dan meningkatkan kinerja model menggunakan       `ImageDataGenerator` dari Keras dengan parameter berikut:
              - Rescale: Semua nilai piksel gambar dinormalisasi dengan membagi dengan 255, sehingga nilai piksel berada dalam rentang 0-1.
              - Rotation Range: Gambar dapat diputar secara acak dalam rentang 20 derajat.
