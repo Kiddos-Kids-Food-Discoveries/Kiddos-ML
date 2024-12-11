@@ -34,7 +34,7 @@ Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi dis
 
 # Script .py
 **Catatan:** menyediakan file .py terpisah fokus untuk test model dengan menggunakan gambar diluar dataset  : 
-   1. **predict_model.py** (untuk test model terbaik yang dihasilkan selama pelatihan menggunakan 50 epoch menghasilkan file **best_model.keras**
+   1. **predict_model.py** (untuk test model yang telah dihasilkan selama pelatihan menggunakan 50 epoch menghasilkan file **best_model.keras**
    
 
 # Arsitektur Model :
