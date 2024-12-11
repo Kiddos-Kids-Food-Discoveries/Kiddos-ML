@@ -1,5 +1,26 @@
 # Machine Learning Project : Klasifikasi Gambar Makanan dengan 19 Kelas
 
+## Struktur Project : 
+kiddos-ml/
+│
+├── dataset/                     # Folder utama dataset
+│   ├── test/                    # Folder berisi gambar untuk pengujian
+│   ├── train/                   # Folder berisi gambar untuk pelatihan
+│   ├── validation/              # Folder berisi gambar untuk validasi
+│
+├── test_images/                 # Folder berisi 25 gambar untuk pengujian model
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   └── ...
+│
+├── best_model.keras             # Model terbaik yang disimpan selama pelatihan
+├── labels.csv                   # File CSV yang berisi label untuk setiap kelas makanan
+├── model.h5                     # Model akhir yang telah disimpan dalam format HDF5
+├── notebook.ipynb               # Notebook Jupyter yang berisi kode untuk pelatihan, evaluasi, dan visualisasi model
+├── predict.py                   # Script untuk memprediksi gambar menggunakan model yang telah dilatih
+├── requirements.txt             # File yang berisi daftar dependensi yang dibutuhkan oleh proyek ini
+
+
 ## Deskripsi :
 Proyek ini bertujuan untuk membangun dan melatih model klasifikasi gambar menggunakan **Convolutional Neural Networks (CNN)**. Model ini mengklasifikasikan gambar ke dalam 19 kelas makanan yang berbeda.
 #### 19 Kelas:
