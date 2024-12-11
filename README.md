@@ -80,15 +80,18 @@ Untuk menginstal semua dependensi yang dibutuhkan oleh proyek ini, bisa mengguna
 
 ## 5. Menginstal Dependensi:
 Setelah virtual environment aktif, jalankan perintah berikut untuk menginstal semua dependensi yang tercantum di dalam requirements.txt:
+
             - pip install -r requirements.txt
 
 ## 6. Menjalankan Project:
 ### 6.1 Menjalankan Notebook Jupyter (notebook.ipynb):
 Untuk menjalankan notebook Jupyter, jalankan perintah berikut di terminal:
+
             - jupyter notebook
 
 ### 6.2 Menjalankan Script Python (predict_model.py):
 Jika ingin menjalankan file Python seperti predict_model.py untuk langsung menguji model langsung dengan gambar diluar dataset yang disiapkan, jalankan perintah berikut di terminal:
+
             - python predict_model.py
 
 
