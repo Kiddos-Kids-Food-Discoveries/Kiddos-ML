@@ -90,12 +90,12 @@ Once the virtual environment is active, run the following command to install all
             - pip install -r requirements.txt
 
 ## 6. Run the Project:
-### 6.1 Running the Jupyter Notebook (notebook.ipynb):
+### - Running the Jupyter Notebook (notebook.ipynb):
 To run the Jupyter notebook, execute the following command in the terminal:
 
             - jupyter notebook
 
-### 6.2 Running the Python Script (predict_model.py):
+### - Running the Python Script (predict_model.py):
 If you want to run the Python file like **predict_model.py** to directly test the model with images outside the prepared dataset, run the following command in the terminal:
 
             - python predict_model.py
