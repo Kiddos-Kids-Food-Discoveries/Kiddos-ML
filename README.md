@@ -9,7 +9,8 @@ Proyek ini bertujuan untuk membangun dan melatih model klasifikasi gambar menggu
 - <img width="612" alt="1_prep_index" src="https://github.com/user-attachments/assets/9fbb51ca-f3cd-494d-b4c0-aa52a7e72bf5">
 
 # Tools yang Digunakan:
-### TensorFlow, Keras, OpenCV untuk pemrosesan gambar
+### TensorFlow, Keras untuk membangun dan melatih model CNN.
+### OpenCV untuk pemrosesan gambar
 
 # Prepocessing Data
 * Augmentasi gambar untuk meningkatkan variasi data dan performa model.
@@ -29,17 +30,16 @@ Proyek ini bertujuan untuk membangun dan melatih model klasifikasi gambar menggu
              - Horizontal Flip: Gambar dapat dibalik secara horizontal secara acak.
 
 # Notebook Versi Lengkap
-Proyek ini juga disertai dengan versi lengkap dengan format ".ipynb" yang bisa digunakan untuk eksplorasi dari awal sampai menghasilkan output file model.h5 dengan lebih mendalam terkait model, pelatihan, dan evaluasi. 
+Proyek ini versi lengkap dengan format ".ipynb" yang bisa digunakan untuk eksplorasi dari awal sampai menghasilkan output file model.h5 dengan lebih mendalam terkait model, pelatihan, dan evaluasi. 
 Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi disertakan dalam file `notebook.ipynb`.
 
 # Script .py
-**Catatan:** Proses test model pada file `notebook.ipynb` yang menggunakan hingga 50 epoch dan visualisasi menggunakan `plt.show()` bisa memakan waktu cukup lama, terutama pada dataset besar. Oleh karena itu dibuat menjadi  file/script dalam bentuk ".py" yaitu : 
-   1. predict_model.py (untuk test model terbaik yang dihasilkan (best_model.keras) sebelum save model dalam format h5)
-   2. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
+**Catatan:** menyediakan file .py terpisah fokus untuk test model dengan menggunakan gambar diluar dataset  : 
+   1. **predict_model.py** (untuk test model terbaik yang dihasilkan selama pelatihan menggunakan 50 epoch menghasilkan file **best_model.keras**
+   
 
 # Arsitektur Model :
 Model menggunakan **CNN**  untuk klasifikasi gambar dengan 4 lapisan konvolusi (Conv2D) untuk mengekstraksi fitur, diikuti dengan batch normalization dan max pooling untuk mereduksi dimensi. **GlobalAveragePooling2D** digunakan untuk mereduksi dimensi lebih lanjut sebelum memasuki lapisan Dense untuk klasifikasi akhir. Dropout diterapkan untuk mencegah overfitting.
-
 ## Kompilasi Model :
 Model dikompilasi dengan optimizer Adam
 
@@ -48,8 +48,6 @@ Mengukur performa model dengan menggunakan Confusion Matrix :
 Confusion matrix memberikan gambaran tentang seberapa baik model dalam mengklasifikasikan gambar ke dalam kelas yang benar. Berikut adalah confusion matrix yang dihasilkan setelah model diuji pada dataset pengujian:
    <img width="869" alt="5_confusion_matrix" src="https://github.com/user-attachments/assets/51fca590-b652-4aab-baaf-ac8a24ab3c7a">
 
-
-   
 ## Penyimpanan model terbaik :
 Model terbaik disimpan otomatis selama pelatihan sebagai best_model.keras. File model ini kemudian bisa dikonversi ke format .h5 untuk digunakan di lingkungan produksi atau pengujian dengan menjalankan save_model_h5.py.
 
@@ -57,5 +55,41 @@ Model terbaik disimpan otomatis selama pelatihan sebagai best_model.keras. File 
 File requirements untuk menjalankan proyek ini dapat ditemukan di file dengan nama "requirements.txt". Bisa menginstall semua dependensi yang diperlukan 
 
 
+# Cara Clone GitHub Project: 
+##### Pastikan sudah menginstal Git di komputer. Jika belum, instal Git terlebih dahulu.
+## 1. Clone Repository
+Buka Terminal di VSCode, dan jalankan perintah berikut untuk meng-clone repository:
+            - git clone https://github.com/Kiddos-Kids-Food-Discoveries/kiddos-ml.git
+
+## 2. Masuk ke Folder Project
+Setelah proses cloning selesai, masuk ke folder project dengan perintah:
+            - cd kiddos-ml
+## 3. Periksa Isi Folder
+Untuk memastikan isi folder dan file yang ada, jalankan perintah:
+            - ls
+## 4. Membuat dan Mengaktifkan Virtual Environment (Opsional, tapi disarankan):
+Untuk menginstal semua dependensi yang dibutuhkan oleh proyek ini, bisa menggunakan pip dengan mengikuti langkah berikut:
+###### Untuk macOS/Linux:
+            - python -m venv venv
+            - source venv/bin/activate
+###### Untuk Windows:
+            - python -m venv venv
+            - .\venv\Scripts\activate
+
+## 5. Menginstal Dependensi:
+Setelah virtual environment aktif, jalankan perintah berikut untuk menginstal semua dependensi yang tercantum di dalam requirements.txt:
+            - pip install -r requirements.txt
+
+## 6. Menjalankan Project:
+### 6.1 Menjalankan Notebook Jupyter (notebook.ipynb):
+Untuk menjalankan notebook Jupyter, jalankan perintah berikut di terminal:
+            - jupyter notebook
+
+### 6.2 Menjalankan Script Python (predict_model.py):
+Jika ingin menjalankan file Python seperti predict_model.py untuk langsung menguji model langsung dengan gambar diluar dataset yang disiapkan, jalankan perintah berikut di terminal:
+            - python predict_model.py
 
 
+
+
+# Good luck! 😉
