@@ -2,8 +2,7 @@
 
 ## Project Structure:
 
-<img width="987" alt="Screenshot 2024-12-11 at 15 13 25" src="https://github.com/user-attachments/assets/2ec98a05-2d1f-408e-a95b-0641ab7935e7">
-
+<img width="902" alt="Screenshot 2024-12-11 at 15 32 24" src="https://github.com/user-attachments/assets/a57f5dd8-862e-49ad-b50d-db8c2d6f49e9">
 
 ## Description :
 This project aims to build and train an image classification model using **Convolutional Neural Networks (CNN)**. The model classifies images into 19 different food categories.
