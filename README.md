@@ -33,10 +33,9 @@ Proyek ini juga disertai dengan versi lengkap dengan format ".ipynb" yang bisa d
 Semua proses yang digunakan dalam pelatihan model, evaluasi, dan visualisasi disertakan dalam file `notebook.ipynb`.
 
 # Script .py
-**Catatan:** Proses pelatihan model pada file `notebook.ipynb` yang menggunakan hingga 50 epoch dan visualisasi menggunakan `plt.show()` bisa memakan waktu cukup lama, terutama pada dataset besar. Oleh karena itu dibagi menjadi beberapa file/script dalam bentuk ".py" yaitu : 
-   1. prep_train_model.py (untuk preprocessing data, build model dan train model)
-   2. predict_model.py (untuk test model terbaik yang dihasilkan sebelum save model dalam format h5)
-   3. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
+**Catatan:** Proses test model pada file `notebook.ipynb` yang menggunakan hingga 50 epoch dan visualisasi menggunakan `plt.show()` bisa memakan waktu cukup lama, terutama pada dataset besar. Oleh karena itu dibuat menjadi  file/script dalam bentuk ".py" yaitu : 
+   1. predict_model.py (untuk test model terbaik yang dihasilkan (best_model.keras) sebelum save model dalam format h5)
+   2. save_model_h5.py (untuk save file best_model.keras dalam format ".h5" agar bisa diproses tim MD dan CC)
 
 # Arsitektur Model :
 Model menggunakan **CNN**  untuk klasifikasi gambar dengan 4 lapisan konvolusi (Conv2D) untuk mengekstraksi fitur, diikuti dengan batch normalization dan max pooling untuk mereduksi dimensi. **GlobalAveragePooling2D** digunakan untuk mereduksi dimensi lebih lanjut sebelum memasuki lapisan Dense untuk klasifikasi akhir. Dropout diterapkan untuk mencegah overfitting.
